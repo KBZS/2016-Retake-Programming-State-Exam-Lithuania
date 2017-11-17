@@ -4,13 +4,13 @@
 
 using namespace std;
 
-void vidurkis();
-void aukst();
-void spausdinimas();
+void vidurkis();    //function to calculate the average heigh
+void aukst();       //function to calculate how many students are taller than the average
+void spausdinimas();//function for output  
 
-int vid;
-int sk = 0;
-int n;
+int vid;            //variable for average
+int sk = 0;         //starting value for the number of students who are taller than average
+int n;              //how many students in the list
 
 int main()
 {
@@ -21,7 +21,7 @@ int main()
     return 0;
 }
 
-void vidurkis()
+void vidurkis()     //function to calculate the average heigh
 {
     int temp;
     int sum = 0;
@@ -35,7 +35,7 @@ void vidurkis()
     vid = sum/n;
 }
 
-void aukst()
+void aukst()        //function to calculate how many students are taller than the average
 {
     int temp;
     ifstream fd1("U1.txt");
@@ -47,7 +47,7 @@ void aukst()
     }
 }
 
-void spausdinimas()
+void spausdinimas() //function for output
 {
     ofstream fr("U1rez.txt");
     fr << vid << " " << sk << endl;
