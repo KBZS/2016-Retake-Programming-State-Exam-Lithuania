@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+// 2016 Exam (Retake session)
 
 using namespace std;
 
@@ -8,7 +9,7 @@ void aukst();
 void spausdinimas();
 
 int vid;
-int sk=0;
+int sk = 0;
 int n;
 
 int main()
